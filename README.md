@@ -7,11 +7,16 @@ This is a POC for a performance testing framework using K6, sending Rabbit messa
 * Node
 * Javascript
 * [K6](https://k6.io/docs/getting-started/installation/)
+* Docker & docker-compose
 
 ## Installation
 
 * Clone the repo
 * Run `npm install` in the terminal
+
+## Start Docker services
+
+* Run `docker-compose up -d`
 
 ## Start the server
 
