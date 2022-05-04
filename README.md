@@ -30,4 +30,4 @@ This is a POC for a performance testing framework using K6, sending Rabbit messa
 
 ### Dicom
 
-* Run `k6 run tests/dicom.js`
+* Run `k6 run -e CONFIG=config/{appropriate-config-file} tests/dicom.js`

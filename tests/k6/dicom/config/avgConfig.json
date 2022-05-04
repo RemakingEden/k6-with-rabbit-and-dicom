@@ -1,0 +1,26 @@
+{
+    "ct": {
+        "vus": 10,
+        "iterations": 10,
+        "startTime": "1s",
+        "maxDuration": "10s"
+    },
+    "mri": {
+        "vus": 10,
+        "iterations": 10,
+        "startTime": "1s",
+        "maxDuration": "10s"
+    },
+    "ultrasound": {
+        "vus": 10,
+        "iterations": 10,
+        "startTime": "1s",
+        "maxDuration": "10s"
+    },
+    "xray": {
+        "vus": 10,
+        "iterations": 10,
+        "startTime": "1s",
+        "maxDuration": "10s"
+    }
+}
