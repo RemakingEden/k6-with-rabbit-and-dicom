@@ -1,26 +1,26 @@
 {
     "ct": {
-        "vus": 10,
-        "iterations": 10,
-        "startTime": "1s",
-        "maxDuration": "10s"
+        "rate": 30,
+        "timeUnit": "1h", 
+        "duration": "1h",
+        "preAllocatedVUs": 5 
     },
     "mri": {
-        "vus": 10,
-        "iterations": 10,
-        "startTime": "1s",
-        "maxDuration": "10s"
+        "rate": 25,
+        "timeUnit": "1h", 
+        "duration": "1h",
+        "preAllocatedVUs": 5 
     },
     "ultrasound": {
-        "vus": 10,
-        "iterations": 10,
-        "startTime": "1s",
-        "maxDuration": "10s"
+        "rate": 50,
+        "timeUnit": "1h", 
+        "duration": "1h",
+        "preAllocatedVUs": 5 
     },
     "xray": {
-        "vus": 10,
-        "iterations": 10,
-        "startTime": "1s",
-        "maxDuration": "10s"
+        "rate": 120,
+        "timeUnit": "1h", 
+        "duration": "1h",
+        "preAllocatedVUs": 5 
     }
 }
