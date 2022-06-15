@@ -1,8 +1,9 @@
-var express = require('express');
-var router = express.Router();
-var { storeScu } = require('dicom-dimse-native');
+let express = require('express');
+let router = express.Router();
+let { storeScu } = require('dicom-dimse-native');
+let config = require('../config/config');
 
-var options = {
+let options = {
   source: {
     aet: "DIMSE",
     ip: "127.0.0.1",
@@ -10,8 +11,8 @@ var options = {
   },
   target: {
     aet: "DIMSE",
-    ip: "127.0.0.1",
-    port: 4242
+    ip: config.dicom.ip,
+    port: config.dicom.port
   },
   netTransferPropose: "1.2.840.10008.1.2.4.80",
   verbose: true

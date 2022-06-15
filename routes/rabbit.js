@@ -1,10 +1,11 @@
-var express = require('express');
-var router = express.Router();
-var { AMQPClient } = require('@cloudamqp/amqp-client');
+let express = require('express');
+let router = express.Router();
+let { AMQPClient } = require('@cloudamqp/amqp-client');
+let config = require('../config/config');
 
 async function run() {
   try {
-    const amqp = new AMQPClient("amqp://localhost")
+    const amqp = new AMQPClient("amqp://" + config.rabbit.ip)
     const conn = await amqp.connect()
     const ch = await conn.channel()
     const q = await ch.queue()
